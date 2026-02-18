@@ -10,4 +10,8 @@ collections:
   - name: "pages"
     label: "Pages"
     folder: "content/pages"     # folder in your repo where pages will be stored
-    create: true                # allows new pages to be created in th
+    create: true                # allows new pages to be created in the CMS
+    slug: "{{slug}}"            # filename format for new pages
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
