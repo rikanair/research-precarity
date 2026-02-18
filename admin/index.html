@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+  branch: main
+  identity_url: "https://researchprecarity.netlify.app/.netlify/identity"
+
+media_folder: "static/images"   # where uploaded images will be stored in your repo
+public_folder: "/images"        # URL path for images on your site
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"     # folder in your repo where pages will be stored
+    create: true                # allows new pages to be created in th
